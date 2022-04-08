@@ -34,7 +34,10 @@ body{
     padding: 20px;
     display: block;
 }
- 
+
+.menu li button>a {
+    color: black;
+}
 .menu li a:hover{
     opacity: 0.7;
 }
