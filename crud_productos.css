@@ -1,0 +1,156 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Logo y titulo pagina*/
+
+.header img,
+.header h1 {
+    color: aqua;
+    float: left;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+body {
+    background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*filas tabla*/
+
+body table {
+    background-color: white;
+}
+
+
+/*efecto mouse titulo pagina*/
+
+.header h1:hover {
+    color: rgb(219, 210, 210);
+}
+
+
+/*efecto clic titulo pagina*/
+
+.header h1:active {
+    color: white;
+}
+
+
+/*propiedades menu*/
+
+.menu {
+    background-color: #12c72a;
+    list-style: none;
+    padding: 25px;
+    text-align: right;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    opacity: 0.7;
+}
+
+.menu li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menu li .btn-group>.btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li button>a {
+    color: black;
+}
+
+.menu li button>a:hover {
+    opacity: 0.7;
+}
+
+.menu li button>a:active {
+    background-color: rgb(141, 114, 114);
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn:active {
+    color: black;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#f1 {
+    background-color: rgb(211, 211, 195);
+}
+
+#agregar {
+    color: white;
+    margin-left: 25%;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#actualizar,
+#eliminar,
+#limpiar {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #agregar {
+        color: white;
+        margin-left: 50px;
+        margin-top: 40px;
+        padding: 4px;
+    }
+    #actualizar,
+    #eliminar,
+    #limpiar {
+        margin-left: 20px;
+        padding: 4px;
+    }
+}
