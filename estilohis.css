@@ -211,8 +211,8 @@ button:hover{
         display: flex;
         justify-content: center;
     }
-    #iniciarsesion{
-        padding-top: 10px;
+    .menu li button{
+        padding-top: 19px;
     }
     .menu li a {
         color: #12c72a;
