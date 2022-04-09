@@ -13,24 +13,29 @@ body{
  
 .header img, .header h1 {
     float: left;
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 20px;
     padding-top: 20px;
 }
+
+.header h1{
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif;
+    padding-top: 35px;
+}
  
 .menu {
-    background-color: #12c72a;
+    background-color:  #ffffff;
     list-style: none;
     padding: 20px;
     text-align: right;
 }
  
 .menu li a {
-    color: white;
+    color: #12c72a;
     text-decoration: none;
     padding: 20px;
     display: block;
+    font-family: 'Secular One', sans-serif;
 }
 
 .menu li button>a {
@@ -86,24 +91,46 @@ body{
     }
     .header img, .header h1 {
         float: left;
-        font-size: 30px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
         padding-left: 20px;
         padding-top: 20px;
     }
-     
-    .menu {
-        background-color: #12c72a;
-        list-style: none;
-        padding: 20px;
-        text-align: right;
+    
+    .header h1{
+        font-size: 30px;
+        font-family: 'Secular One', sans-serif;
+        padding-top: 35px;
     }
      
+    .menu {
+        background-color:  #ffffff;
+        list-style: none;
+        padding: 10px;
+        text-align: right;
+        width: 100%;
+        height: 80px;
+        font-size: 15px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+    }
+    #iniciarsesion{
+        padding-top: 10px;
+    }
+
     .menu li a {
-        color: white;
+        color: #12c72a;
         text-decoration: none;
         padding: 20px;
-        display: block;
+        display: flex;
+        float: left;
+        justify-content: flex-end;
+        font-family: 'Secular One', sans-serif;
+        
     }
      
     .menu li a:hover{
@@ -128,7 +155,7 @@ body{
         display: flex;
         justify-content: center;
         height: 600px;
-        width: 500px;
+        width: 450px;
         background-color: #12c72a88;
         margin-left: 20px;
         border-radius: 15px;
@@ -142,7 +169,7 @@ body{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
+        width: 450px;
         height: 500px;
         margin-left:   20px;
         border-radius: 15px;

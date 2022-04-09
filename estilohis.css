@@ -15,24 +15,29 @@ body{
  
 .header img, .header h1 {
     float: left;
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 20px;
     padding-top: 20px;
 }
+
+.header h1{
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif;
+    padding-top: 35px;
+}
  
 .menu {
-    background-color: #12c72a;
+    background-color:  #ffffff;
     list-style: none;
     padding: 20px;
     text-align: right;
 }
  
 .menu li a {
-    color: white;
+    color: #12c72a;
     text-decoration: none;
     padding: 20px;
     display: block;
+    font-family: 'Secular One', sans-serif;
 }
 
 .menu li button>a {
@@ -180,24 +185,42 @@ button:hover{
     }
     .header img, .header h1 {
         float: left;
-        font-size: 30px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
         padding-left: 20px;
         padding-top: 20px;
     }
+    .header{
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+    }
+    .header h1{
+        font-size: 30px;
+        font-family: 'Secular One', sans-serif;
+        padding-top: 35px;
+    }
      
     .menu {
-        background-color: #12c72a;
+        background-color:  #ffffff;
         list-style: none;
         padding: 20px;
         text-align: right;
+        width: 100%;
+        height: 80px;
+        font-size: 15px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
     }
-     
+    #iniciarsesion{
+        padding-top: 10px;
+    }
     .menu li a {
-        color: white;
+        color: #12c72a;
         text-decoration: none;
         padding: 20px;
         display: block;
+        float: left;
+        font-family: 'Secular One', sans-serif;
     }
      
     .menu li a:hover{
@@ -224,7 +247,7 @@ button:hover{
         background-color: #12c72a88;
         color: white;
         width: 200px;
-        margin-left: 15%;
+        margin-left: 30%;
         border-radius: 15px;
         flex-direction: row;
         padding-top: 10px;
@@ -234,8 +257,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -246,8 +269,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -258,8 +281,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -270,8 +293,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -281,8 +304,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -293,8 +316,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -304,8 +327,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
@@ -316,8 +339,8 @@ button:hover{
         display: flex;
         justify-content: start;
         background-color: #12c72a88;
-        width: 500px;
-        margin-left: 5%;
+        width: 450px;
+        margin-left: 3.5%;
         border-radius: 15px;
         padding-left: 0px;
         padding-top: 20px;
