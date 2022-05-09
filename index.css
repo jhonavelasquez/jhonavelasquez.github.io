@@ -1,33 +1,31 @@
-* {
+#encabezado {
+    display: flex;
+    padding: 20px;
+}
+
+h1{
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#encabezado, h1{
+    display: flex;
+}
+
+
+#menu{
+    margin-left: 1100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    
 }
 
 
-/*Logo y titulo pagina*/
 
-.header img,
-.header h1 {
-    float: left;
-    padding-left: 20px;
-    padding-top: 20px;
-}
 
-.header h1 {
-    font-size: 30px;
-    font-family: 'Secular One', sans-serif;
-    padding-top: 35px;
-}
 
-.menu {
-    background-color: #ffffff;
-    list-style: none;
-    padding: 2px;
-    text-align: right;
-}
-
-body {
+body{
     background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -36,215 +34,19 @@ body {
     background-position: center center;
 }
 
-.header h1:hover {
-    color: rgb(219, 210, 210);
-}
-
-
-/*efecto clic titulo pagina*/
-
-.header h1:active {
-    color: white;
-}
-
-.menu .btn-group {
-    color: #12c72a;
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-
-
-/*propiedades menu*/
-
-.menu li a {
-    color: #12c72a;
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-    font-family: 'Secular One', sans-serif;
-}
-
-.menu li a:hover {
-    opacity: 0.7;
-}
-
-.menu li {
-    color: #12c72a;
-    display: inline-block;
-    padding-right: 20px;
-}
-
-.menu li .btn-group>.btn {
-    color: #12c72a;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.menu li button>a {
-    color: black;
-}
-
-.menu li button>a:hover {
-    opacity: 0.7;
-}
-
-.menu li button>a:active {
-    background-color: rgb(141, 114, 114);
-    color: white;
-}
-
-.btn:hover {
-    opacity: 0.7;
-}
-
-.btn:active {
-    color: black;
-}
-
-
-/*nombre de los productos*/
-
-h5 {
-    width: 200px;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-/*boton añadir al carro*/
-
-
-/*tarjeta*/
-
-.card {
-    background-color: #12c72a;
-    border-radius: 20px;
-    width: 80%;
-    margin: 20px;
-    margin-left: 200px;
+.card{
     float: left;
-    padding: 10px;
+    margin: 30px 40px;
 }
 
-
-/*tarjeta cuerpo*/
-
-.card-body {
-    background-color: #12c72a;
-    font-family: Verdana;
-}
-
-/ #productos {
-    border-radius: 30px;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 400px;
-    padding: 20px;
-    max-width: 2000px;
-    text-align: justify;
-}
-
-.card-text {
-    background-color: whitesmoke;
-    width: 180px;
-    padding: 10px;
-    margin-top: 1px;
-    margin-bottom: 10px;
+.card-title{
+    background-color: rgb(19, 231, 19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    padding: 20px;
 }
 
-.btn {
-    background-color: blue;
-    color: white;
-    margin-top: 30px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    opacity: 0.7;
-}
-
-.btn:active {
-    color: black;
-}
-
-
-/*pagina responsiva*/
-
-@media screen and (max-width: 1300px) {
-    body {
-        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
-        background-attachment: fixed;
-        background-position: center center;
-    }
-    .card,
-    #productos {
-        padding: 0 auto;
-        margin-left: 20px;
-        padding-right: 20px;
-    }
-    .btn {
-        margin-bottom: 30px;
-    }
-    .menu {
-        width: 100%;
-        font-size: 15px;
-        padding-left: 2px;
-        padding-right: 0px;
-    }
-    .menu li a {
-        float: left;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    body {
-        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
-        background-attachment: fixed;
-        background-position: center center;
-    }
-    .card,
-    #productos {
-        padding: 0 auto;
-        margin-left: 20px;
-        padding-right: 20px;
-    }
-    .btn {
-        margin-bottom: 30px;
-    }
-    .menu {
-        width: 100%;
-        font-size: 15px;
-        padding-left: 2px;
-        padding-right: 0px;
-    }
-    .menu li a {
-        float: left;
-    }
-    .menu {
-        width: 100%;
-        height: 80px;
-        font-size: 15px;
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    .menu .btn-group {
-        color: #12c72a;
-        padding: 0px;
-        padding-bottom: 5px;
-    }
-    .header {
-        display: flex;
-        justify-content: center;
-        background-color: #ffffff;
-    }
-    .menu li a {
-        float: left;
-    }
-}
-
-
-}
-
+.card-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
