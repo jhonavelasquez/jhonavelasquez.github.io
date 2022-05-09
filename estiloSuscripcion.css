@@ -47,7 +47,7 @@ body {
     font-family: 'Secular One', sans-serif;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     opacity: 0.7;
 }
 
@@ -164,7 +164,7 @@ p {
     padding-right: 500px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 568px) {
     body {
         background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
         background-repeat: no-repeat;
@@ -173,7 +173,11 @@ p {
         background-size: cover;
         background-position: center center;
     }
-
+    body > div {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
     .menu {
         width: 100%;
         font-size: 15px;
@@ -183,7 +187,12 @@ p {
         justify-content: center;
     }
 
-    #iniciarsesion{
+    .contenedor{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #iniciarsesion {
         padding-top: 19px;
     }
 
@@ -222,6 +231,25 @@ p {
 
 }
 
+@media screen and (max-width: 568px) {
+    body {
+        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+    }
+    .menu {
+        width: 100%;
+        height: 80px;
+        font-size: 15px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     body {
         background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
@@ -235,8 +263,15 @@ p {
     .menu {
         width: 100%;
         font-size: 15px;
-        padding-left: 5px;
+        padding-left: 20px;
         padding-right: 0px;
+    }
+
+    .header img,
+    .header h1 {
+        float: left;
+        display: flex;
+        justify-content: center;
     }
 
     .info img {
