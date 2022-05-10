@@ -148,3 +148,19 @@ label>a{
         padding: 10px 60px 10px 60px;
     }
 }
+
+
+.error{
+    border: 2px red solid !important;
+    background-color: rosybrown !important;
+}
+
+.ok{
+    border: 2px green solid !important;
+    background-color: rgb(98, 255, 158) !important;
+    color: #12c72a;
+}
+
+div > h1{
+    font-size: 18px;
+}
