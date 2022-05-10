@@ -1,28 +1,10 @@
-#encabezado {
-    display: flex;
-    padding: 20px;
+#menu{
+    margin-left: 60%;
 }
 
 h1{
-    color: black;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-#encabezado, h1{
-    display: flex;
-}
-
-
-#menu{
-    margin-left: 1100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
-
-
-
 
 
 body{
@@ -49,4 +31,20 @@ body{
 .card-text{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+
+@media screen and (max-width: 280px){
+    h1{
+        display: none;
+    }
+
+    body{
+        background-color: orange;
+    }
+
+    #navegacion{
+        width: 100%;
+        margin-left: 50px;
+    }
+
 }
