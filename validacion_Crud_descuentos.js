@@ -28,6 +28,8 @@ $(document).ready(function () {
 
     $('#limpiar').click(function() {
         if ($("#nombre").val() != "" || $("#porcentaje").val() != ""){
+            $("#nombre").removeClass("ok");
+            $("#porcentaje").removeClass("ok");
             $("#nombre").val('');
             $("#porcentaje").val('');
     
@@ -36,5 +38,9 @@ $(document).ready(function () {
         $("#porcentaje").val() == ""
         $("#mensaje1").html(" ")
         $("#mensaje2").html(" ")
+        $("#nombre").removeClass("error");
+        $("#porcentaje").removeClass("error");
     })
+
+
 })
