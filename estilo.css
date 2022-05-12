@@ -14,31 +14,32 @@ body{
     background-position: center center;
 }
 
-.contenido{
-    padding: 40px 150px 40px 150px;
-}
-.header>h1{
-    padding-top: 30px;
-}
-
-.header img, .header h1 {
+.header img,
+.header h1 {
     float: left;
     padding-left: 20px;
     padding-top: 20px;
 }
 
-.header h1{
+.header h1 {
     font-size: 30px;
     padding-top: 35px;
 }
- 
+
+h1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
 .menu {
-    background-color:  #ffffff;
+    background-color: #ffffff;
     list-style: none;
     padding: 20px;
     text-align: right;
 }
- 
+
 .menu li a {
     color: #12c72a;
     text-decoration: none;
@@ -46,12 +47,12 @@ body{
     display: block;
     font-family: 'Secular One', sans-serif;
 }
- 
-.menu li a:hover{
+
+.menu li a:hover {
     opacity: 0.7;
 }
 
-#iniciarsesion:hover{
+#iniciarsesion:hover {
     opacity: 0.7;
 }
 
@@ -59,19 +60,42 @@ body{
     display: inline-block;
     padding-right: 30px;
 }
-
-
-form{
-    background-color: #12c72ae7;
+.menu li button>a {
+    color: black;
+}
+.menu li a div {
+    float: left;
+}
+.menu li a  img{
+    padding: 0px 10px 5px 0px;
+    
+    
+}
+form {
+    background-color: #12c72ac9;
     border-radius: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
 }
- 
-form>div{
-    padding: 25px;
+
+form>div {
+    margin: 30px 20px 30px 20px;
 }
+label {
+    font-family: 'Secular One', sans-serif;
+    font-size: 23px;
+    color: #ffffff;
+}
+
+label>a {
+    color: #ffffff;
+}
+
+
+
+
+.contenido{
+    padding: 40px 150px 40px 150px;
+}
+
  
 .pregunta>a{
     display: flex;
@@ -93,11 +117,6 @@ form>div{
     margin: 40px;
 }
  
-label{
-    color: #ffffff;
-    font-family: 'Secular One', sans-serif;
-    font-size: 23px;
-}
 
 
 #admin{
@@ -106,15 +125,8 @@ label{
     flex-wrap: wrap;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-}
 
-.menu li button>a {
-    color: black;
-}
+
 
 .error{
     border: 2px red solid !important;
@@ -128,35 +140,28 @@ h1{
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-    }
-    .menu {
-        width: 100%;
-        height: 80px;
-        font-size: 15px;
-        padding-left: 0px;
+    .header img{
         display: flex;
-        justify-content: center;
+        background-color: #ffffff;
     }
-
+    .header h1 {
+        
+        display: none;
+        
+    }
+    body > div {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #menu{
+        margin-right: 40px;
+    }
     #iniciarsesion{
         padding-top: 19px;
     }
-    .header{
-        display: flex;
-        justify-content: center;
-        background-color: #ffffff;
-    }
 
-    .menu li a {
-        float: left;
-    }
+    
 
     .contenido{
         padding: 10px 60px 10px 60px;
@@ -196,4 +201,3 @@ h1{
 
     }
 }
-
