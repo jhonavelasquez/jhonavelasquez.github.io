@@ -45,74 +45,122 @@
             </li>
         </ul>
     </div>
-    <div id="tabla">
-        <table>
-            <tr id="f1">
-                <td>Código</td>
-                <td>Nombre</td>
-                <td>Precio</td>
-                <td>Stock</td>
-            </tr>
 
+      <table class="table" id="tablaProductos">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre del producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Descuento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Planta</td>
+            <td>9990</td>
+            <td>10</td>
+            <td></td>
+            
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Cima verde</td>
+            <td>17000</td>
+            <td>7</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Planta artificial</td>
+            <td>3790</td>
+            <td>8</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Planta cheflera</td>
+            <td>4000</td>
+            <td>10</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Tierra de hojas</td>
+            <td>6790</td>
+            <td>8</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Maceta</td>
+            <td>3790</td>
+            <td>8</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Planta artificial</td>
+            <td>5990</td>
+            <td>8</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Maceta redonda</td>
+            <td>7000</td>
+            <td>8</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Pala jardinera</td>
+            <td>7000</td>
+            <td>9</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
 
-            <tr>
-                <td>00001</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
+      <form id="formProductos">
+        <div class="form-group">
+          <label for="inputNombreProducto">Nombre del producto</label>
+          <input type="text" class="form-control" id="inputNombreProducto">
+        </div>
+        <br>
+        <div class="form-group col-md-4">
+            <label for="inputPrecio">Precio</label>
+            <input type="number" class="form-control" id="inputPrecio">
+          </div>
+          <br>
+          <div class="form-group col-md-4">
+            <label for="inputStock">Stock</label>
+            <input type="number" class="form-control" id="inputStock">
+        </div>
+        <br>
+        <div class="form-group col-md-4">
+            <label for="inputDescuento">Descuento %</label>
+            <input type="number" class="form-control" id="inputDescuento" max="100">
+        </div>
+        <br>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="imagenProducto" lang="es" required>
+          </div>
+          <br>
+        
+        <button type="submit" class="btn btn-primary" id="btnAgregar">Agregar</button>
+        <button type="reset" class="btn btn-primary" id="btnLimpiar">Limpiar</button>
+        <button type="reset" class="btn btn-primary" id="btnActualizar">Actualizar</button>
+        <button type="reset" class="btn btn-primary" id="btnBorrar">Borrar</button>
+        
+        
+      </form>
 
-            <tr>
-                <td>00002</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
-
-            <tr>
-                <td>00003</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
-
-
-            <tr>
-                <td>00004</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>00005</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>00006</td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
-    </div>
-    </table>
-
-    <button id="agregar">
-      <a href="#">Agregar</a>
-    </button>
-
-    <button id="actualizar">
-        <a href="#">Actualizar</a>
-    </button>
-
-    <button id="eliminar">
-    <a href="#">Eliminar</a>
-    </button>
-
-    <button id="limpiar">
-    <a href="#">Limpiar</a>
-    </button>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="crud_productos_Valid.js"></script>
 
 </body>
 
