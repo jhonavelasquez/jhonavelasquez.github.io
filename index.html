@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,43 +12,37 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="#navegacion">
-        <img src ="https://images.vexels.com/media/users/3/235104/isolated/preview/c82b0d602a94a42de2cc0fb924ecc989-flor-cortada-de-girasol.png" alt="" width="80">
-        <h1>GARDEN STORE</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav mr-auto">
+    <div class="contenedor">
+        <div class="header">
+            <img src="https://images.vexels.com/media/users/3/235104/isolated/preview/c82b0d602a94a42de2cc0fb924ecc989-flor-cortada-de-girasol.png"
+                alt="" width="80">
+            <h1> <a href="" style="text-decoration: none; color: #12c72a;">GARDEN STORE</a></h1>
+        </div>
+        <ul class="menu">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" style="color: black;">Inicio</a>
+                <a class="nav-link" href="index.html" style="color: #12c72a;"><img src="iconos/home_page_24px.png" alt="">Inicio</a> 
+                
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="historial.html" style="color: black;">Tus compras</a>
-            </li>
+            <li><a href="historial.html"> <img src="iconos/time_machine_24px.png" alt="">Tus compras</a></li>
             <li>
                 <div class="btn-group">
-                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
-                Cuenta
-              </button>
+                    <button id="iniciarsesion" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="color: #12c72a; font-family: 'Secular One', sans-serif;"> <img src="iconos/user_24px.png" alt="" width="28px">
+                        Iniciar Sesión
+                    </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><button class="dropdown-item" type="button"><a href="login.html">Iniciar Sesión</a></button></li>
-                        <li><button class="dropdown-item" type="button"><a href="registro.html">Registrar</a></button></li>
-                        <li><button class="dropdown-item" type="button"><a href="suscripcion.html">Suscripción</a></button></li>
+                        <li><button class="dropdown-item" type="button"><a href="login.html">Iniciar Sesión</a></button>
+                        </li>
+                        <li><button class="dropdown-item" type="button"><a href="registro.html">Registrar</a></button>
+                        </li>
+                        <li><button class="dropdown-item" type="button"><a href="suscripcion.html">Suscripción</a></button>
+                        </li>
                     </ul>
                 </div>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="carro.html" style="color: black;">Carrito</a>
-              </li>
-
-    
-        </div>
-      </nav>
-
+            <li><a href="carro.html"><img src="iconos/shopping_cart_24px2.png" alt="" width="35px">Carrito</a></li>
+        </ul>
+    </div>
     <!--Fila 1-->
     <!--producto1-->
     <div class="productos">
@@ -59,6 +53,7 @@
                     <h5 class="card-title">PLANTA</h5>
                     <br>
                     <p class="card-text">$9.990</p>
+                    <p>Stock: 10</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -70,6 +65,7 @@
                     <h5 class="card-title">CIMA VERDE</h5>
                     <br>
                     <p class="card-text">$17.000</p>
+                    <p>Stock: 7</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -81,6 +77,7 @@
                     <h5 class="card-title">PLANTA ARTIFICIAL</h5>
                     <br>
                     <p class="card-text">$3.790</p>
+                    <p>Stock: 8</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -92,6 +89,7 @@
                     <h5 class="card-title">PLANTA CHEFLERA</h5>
                     <br>
                     <p class="card-text">$4.000</p>
+                    <p>Stock: 10</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -105,6 +103,7 @@
                     <h5 class="card-title">TIERRA DE HOJAS</h5>
                     <br>
                     <p class="card-text">$6.790</p>
+                    <p>Stock: 8</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -116,6 +115,7 @@
                     <h5 class="card-title">MACETA</h5>
                     <br>
                     <p class="card-text">$5.990</p>
+                    <p>Stock: 8</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -127,6 +127,7 @@
                     <h5 class="card-title">MACETA REDONDA</h5>
                     <br>
                     <p class="card-text">$7.000</p>
+                    <p>Stock: 8</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -138,6 +139,7 @@
                     <h5 class="card-title">ROSA</h5>
                     <br>
                     <p class="card-text">$9.000</p>
+                    <p>Stock: 8</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
@@ -149,6 +151,7 @@
                     <h5 class="card-title">PALA JARDINERA</h5>
                     <br>
                     <p class="card-text">$5.500</p>
+                    <p>Stock: 9</p>
                     <br>
                     <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
                 </div>
