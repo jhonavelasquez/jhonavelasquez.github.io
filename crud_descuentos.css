@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -76,43 +78,94 @@ body {
     padding: 10px;
 }
 
-body table {
-    background-color: white;
+#titulo{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 10px 100px 0px 100px ;
+    background-color: #12c72af3;
+    padding: 0px 0px 5px 0px;
 }
 
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-    width: 20%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 40px;
-    text-align: center;
+.parte1 {
+    background-color: #12c72af3;
+    width: 50%;
+    margin: 10px 100px 30px 10px;
+    padding: 40px;
+    border-end-end-radius: 30px;
+    color: #ffffff;
 }
 
-table td {
-    padding: 10px;
-    border: 2px solid black;
+.parte1 label {
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
 }
 
-#f1 {
-    background-color: rgb(211, 211, 195);
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+.tabla {
+    background-color: #12c72af3;
+    width: 100%;
+    margin: 10px 10px 30px 100px !important;
+    padding: 40px;
+    border-end-start-radius: 30px;
+}
+
+thead,
+tbody {
+    color: #ffffff;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #agregar {
-    margin-left: 40%;
-    margin-top: 40px;
-    padding: 10px;
+    font-size: 18px;
+    width: 100px;
+    background-color: rgb(27, 151, 27);
+    border-color: black;
 }
 
-#actualizar,
-#eliminar,
-#limpiar {
-    margin-left: 30px;
-    padding: 10px;
+#agregar:hover {
+    background-color: rgb(6, 129, 6);
 }
 
-@media screen and (max-width: 800px) {
+#eliminar {
+    font-size: 18px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    border-color: black;
+}
+
+#eliminar:hover {
+    background-color: rgb(160, 4, 4);
+}
+
+.error{
+    border: 2px red solid !important;
+    background-color: rosybrown !important;
+}
+
+.ok{
+    border: 2px green solid !important;
+    background-color: rgb(98, 255, 158) !important;
+    color: #12c72a;
+}
+
+div > h2{
+    font-size: 18px;
+    color: red;
+}
+
+@media screen and (max-width: 1000px) {
     body {
         background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
         background-attachment: fixed;
@@ -120,16 +173,43 @@ table td {
         background-size: cover;
         background-position: center center;
     }
-    #agregar {
-        color: white;
-        margin-left: 50px;
-        margin-top: 40px;
-        padding: 4px;
+
+    .contenedor {
+        display: flex;
+        flex-direction:column ;
+        justify-self: center;
+        justify-content: center;
     }
-    #actualizar,
-    #eliminar,
-    #limpiar {
-        margin-left: 20px;
-        padding: 4px;
+
+    #titulo{
+        
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin: 0px !important;
+        background-color: #12c72af3;
+        padding: 0px 0px 5px 0px;
     }
+
+    .tabla {
+        display: flex;
+        justify-self: center !important;
+        background-color: #12c72af3;
+        width: 100%;
+        margin: 0px !important;
+        margin-top: 10px !important;
+        padding: 40px;
+        border-end-start-radius: 0px;
+    }
+    
+    .parte1 {
+        background-color: #12c72af3;
+        width: 100%;
+        margin: 0px !important;
+        margin-top: 10px !important;
+        padding: 40px;
+        border-end-end-radius: 30px;
+        color: #ffffff;
+    }
+
+
 }
