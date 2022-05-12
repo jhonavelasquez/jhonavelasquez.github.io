@@ -116,6 +116,17 @@ h1{
     color: black;
 }
 
+.error{
+    border: 2px red solid !important;
+    background-color: rosybrown !important;
+}
+
+.ok{
+    border: 2px green solid !important;
+    background-color: rgb(98, 255, 158) !important;
+    color: #12c72a;
+}
+
 @media screen and (max-width: 800px) {
     body {
         background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
@@ -157,9 +168,6 @@ h1{
         justify-content: center;
         flex-wrap: nowrap;
     }
-    #admin > h1{
-        padding-top: 50px;
-    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -188,5 +196,4 @@ h1{
 
     }
 }
-
 
