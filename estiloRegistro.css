@@ -57,6 +57,18 @@ body{
     padding-right: 30px;
 }
 
+.menu li button>a {
+    color: black;
+}
+.menu li a div {
+    float: left;
+}
+.menu li a  img{
+    padding: 0px 10px 5px 0px;
+
+
+}
+
 form{
     background-color: #12c72ac9;
     border-radius: 30px;
