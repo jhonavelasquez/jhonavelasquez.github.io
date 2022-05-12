@@ -56,8 +56,14 @@ body {
     padding: 20px;
     display: block;
     font-family: 'Secular One', sans-serif;
+    
 }
-
+.menu li a  img{
+   
+    padding: 0px 10px 5px 0px;
+    
+    
+}
 .menu li a:hover {
     opacity: 0.7;
 }
@@ -179,31 +185,31 @@ p {
 
 
 
-
-
-
-
-@media screen and (max-width: 568px) {
-    body {
-        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
+@media screen and (max-width: 320px){
+    h1{
+        display: none;
     }
+    
+
+    .card{
+        margin: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 569px) {
+    h1{
+        display: none;
+    }
+   
     body > div {
         width: 100%;
         margin: 0px;
         padding: 0px;
     }
-    .menu {
-        width: 100%;
-        font-size: 15px;
-        height: 80px;
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
+    #menu{
+        margin-right: 40px;
     }
 
     .contenedor{
@@ -212,7 +218,7 @@ p {
     }
 
     #iniciarsesion {
-        padding-top: 19px;
+        padding: 20px ;
     }
 
     .info img {
@@ -221,12 +227,15 @@ p {
         justify-content: center;
     }
 
-    .header {
+    .header img{
         display: flex;
-        justify-content: center;
         background-color: #ffffff;
     }
-
+    .header h1 {
+        
+        display: none;
+        
+    }
     .menu li a {
         float: left;
     }
@@ -247,50 +256,25 @@ p {
         margin-left: 3px;
         margin-top: 10px;
     }
+    
+    
 
 }
 
-@media screen and (max-width: 568px) {
-    body {
-        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-    }
-    .menu {
-        width: 100%;
-        height: 80px;
-        font-size: 15px;
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
-    }
-}
 
 @media screen and (max-width: 1050px) {
-    body {
-        background-image: url(https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/Banner%20mekong%20guide-7.JPG?itok=EL46q763);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
+
+    #menu{
+        margin-right: 40px;
     }
 
-    .menu {
-        width: 100%;
-        font-size: 15px;
-        padding-left: 20px;
-        padding-right: 0px;
-    }
-
-    .header img,
-    .header h1 {
+    .header img {
         float: left;
         display: flex;
         justify-content: center;
+    }
+    .header h1{
+        display: none;
     }
 
     .info img {
@@ -321,3 +305,4 @@ p {
     }
 
 }
+
