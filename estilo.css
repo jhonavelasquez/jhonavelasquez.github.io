@@ -138,7 +138,40 @@ label>a {
     background-color: rgb(98, 255, 158) !important;
     color: #12c72a;
 }
+@media screen and (max-width: 595px) {
+    .header img{
+        display: flex;
+        background-color: #ffffff;
+    }
+    .header h1 {
+        
+        display: none;
+        
+    }
+    body > div {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #menu{
+        margin-right: 40px;
+    }
+    #iniciarsesion{
+        padding-top: 19px;
+    }
+    .botonLogin{
+        display: flex;
+        justify-content: center;
+    }
+    
 
+    .contenido{
+        padding: 10px 60px 10px 60px;
+    }
+
+
+    
+}
 @media screen and (max-width: 800px) {
     .header img{
         display: flex;
@@ -193,11 +226,15 @@ label>a {
     .menu li a div {
         float: left;
     }
-
+    .card,
+    #productos {
+        padding: 0 auto;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
     #admin{
         height: 500px;
-        display: flex;
-        justify-content: center;
+        
 
     }
 }
