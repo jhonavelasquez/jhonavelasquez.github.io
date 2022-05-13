@@ -72,9 +72,10 @@ $(document).ready(function(){
             alert("Complete los campos vacíos");
         }
 
-        if($("#CorreoUSUARIO").val().indexof("@")){
+        if($("#CorreoUSUARIO").val().indexof("@") >= 0){
             $("#CorreoUSUARIO").addClass("ok");
             $("#CorreoUSUARIO").removeClass("error");
+
             
         }else{
             $("#CorreoUSUARIO").addClass("error");
@@ -86,14 +87,16 @@ $(document).ready(function(){
     })
 
     $("#btnIniciarSesionADMIN").click(function(){
-        if ($("#CorreoADMIN").val() == "" || $("#ClaveADMIN").val() == ""){
+        if ($("#CorreoADMIN").val() == "" || $("#ClaveADMIN").val() == "" ){
+            $("#CorreoADMIN").addClass("error");
+            $("#CorreoADMIN").removeClass("ok");
             $("#ClaveADMIN").addClass("error");
             $("#ClaveADMIN").removeClass("ok");     
             event.preventDefault();
             alert("Complete los campos vacíos");
         }
 
-        if($("#CorreoADMIN").val().indexof("@")){
+        if($("#CorreoADMIN").val().indexof("@") >= 0){
             $("#CorreoADMIN").addClass("ok");
             $("#CorreoADMIN").removeClass("error");
             
@@ -111,4 +114,5 @@ $(document).ready(function(){
 
 
 })
+
 
